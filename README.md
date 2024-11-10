@@ -11,6 +11,8 @@ This repo is a limited public version of the flight software that will run on BL
 
 This repo is maintained for publicity, and is only updated sporadically. Almost all student-written code is still Work-In-Progress, so don't be surprised by rough edges!
 ### Feature overview
+See also the [Software Structure Overview](https://github.com/S-278/YUAA_CubeSat_Public/blob/main/Software%20Structure%20Overview.png).
+
 The BLAST flight software is developed within the [STM32Cube](https://www.st.com/en/ecosystems/stm32cube.html) open ecosystem for an __STM32 microcontroller__ (in between migrating from an STM32F4 to an STM32H7) with a single Cortex core. The __FreeRTOS real-time kernel__ facilitates up to 11 concurrent threads, the most important of which implement:
 * __Attitude Determination and Control System (ADCS)__ including a state machine controller thread, a synchronizing measurement acquisition thread, and an active detumbling thread implementing the Bdot magnetorquer algorithm
 * State machine __radio controller__ supporting execution of uplinked commands, public beacon, and unsolicited downlink over targeted ground stations tracked using an on-board orbital model
@@ -38,6 +40,7 @@ The following included software is reused by the YUAA. Where no hyperlink is pro
 
 All other components are developed solely by YUAA students and are released into the public domain.
 ### Contents
+See also the [Software Components Overview](https://github.com/S-278/YUAA_CubeSat_Public/blob/main/Software%20Components%20Overview.png). 
 #### Appl/
 Application-layer code written entirely by YUAA students, including: Attitude Determination and Control System (ADCS), subsystem check routines, dynamic power distribution algorithm, radio control algorithm, telecommand parser.
 #### Drivers/
