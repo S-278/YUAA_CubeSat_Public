@@ -1,9 +1,10 @@
 # Yale Undergraduate Aerospace Association's Bouchet Low-Earth Alpha/Beta Space Telescope (BLAST), 2015-present
-This repo publishes some parts of the flight software currently under development for Yale's first CubeSat - the Bouchet Low-Earth Alpha/Beta Space Telescope (BLAST), developed entirely by students.
+This repo publishes some parts of the flight software currently under development for Yale's first CubeSat - the Bouchet Low-Earth Alpha/Beta Space Telescope (BLAST), developed entirely by students. I've led the software development since 2021 and the whole project team since 2022.
 ## Context
 Yale Undergraduate Aerospace Association (YUAA) is developing a CubeSat in partenrship with the NASA CubeSat Launch Initiative. Yale will launch a 2U CubeSat to Low Earth Orbit (deployed from the International Space Station) with a twofold mission:
 * Gather position- and time-resolved data on the energies and event frequncies of cosmic rays
 * Demonstrate a gravity gradient boom as a passive attitude stabilization technology
+
 For more details, please visit the team's official website: https://yaleaerospace.org/main/cubesat
 ## What's in this repo?
 This repo is a limited public version of the flight software that will run on BLAST's STM32 on-board computer. We do not publish the full software as it integrates proprietary code from our equipment manufacturer, but this repo contains all the student-written code. 
@@ -16,6 +17,7 @@ The BLAST flight software is developed within the [STM32Cube](https://www.st.com
 * Dynamic __power distribution algorithm__ monitoring actual solar generation and system consumption and prioritizing subsystems in real time
 * Scientific instrument readout routine
 * System health monitoring routines (component checks)
+
 Shared libraries support:
 * Scientific and diagnostic data generation, storage, and search
 * On-board orbital model based on the SGP4 propagator used for determining satellite position from Two-Line Elements
@@ -23,7 +25,7 @@ Shared libraries support:
 * Thread-safe slave and transaction management
 * Drivers for all satellite subsystems
 ### LICENSE
-The following included software is reused by the YUAA:
+The following included software is reused by the YUAA. Where no hyperlink is provided, the components are taken from [STM32CubeF4](https://github.com/STMicroelectronics/STM32CubeF4).
 | Component | Copyright | License
 |-----------|-----------|---------
 |CMSIS      |ARM Limited|Apache License 2.0
@@ -32,7 +34,8 @@ The following included software is reused by the YUAA:
 |FreeRTOS kernel|Amazon.com, Inc. or its affiliates|MIT
 |FatFS|ChaN - STMicroelectronics|BSD-3-Clause
 |[SGP4](https://github.com/aholinch/sgp4)|None, authored by aholinch|None (public domain)
-|NOAA WMM|None, authored by U.S. NOAA|None (public domain)
+|[NOAA WMM](https://www.ncei.noaa.gov/products/world-magnetic-model)|None, authored by U.S. NOAA|None (public domain)
+
 All other components are developed solely by YUAA students and are released into the public domain.
 ### Contents
 #### Appl/
