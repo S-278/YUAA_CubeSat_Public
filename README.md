@@ -3,7 +3,7 @@ This repo publishes some parts of the flight software currently under developmen
 ## Context
 Yale Undergraduate Aerospace Association (YUAA) is developing a CubeSat in partenrship with the NASA CubeSat Launch Initiative. Yale will launch a 2U CubeSat to Low Earth Orbit (deployed from the International Space Station) with a twofold mission:
 * Gather position- and time-resolved data on the energies and event frequncies of cosmic rays
-* Demonstrate a gravity gradient boom as a passive attitude stabilization technology
+* Demonstrate a gravity gradient boom (GGB) as a passive attitude stabilization technology
 
 For more details, please visit the team's official website: https://yaleaerospace.org/main/cubesat
 ## What's in this repo?
